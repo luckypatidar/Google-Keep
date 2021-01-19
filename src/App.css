@@ -1,38 +1,117 @@
-.App {
+
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header_div{
+    max-width: 100%;
+    max-height: 15vh;
+    background: rgb(245, 245, 74);
+    display: flex;
+    justify-self: start;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+.image{
+  max-width: 80px;
+  max-height: 13vh;
+}
+.heading{
+  color: rgb(53, 48, 48);
+  font-size: 25px;
+  
+}
+@media screen and (min-width: 601px) {
+  .heading {
+    font-size: 25px;
+  }
+}
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: rgb(37, 35, 35);
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.note_div{
+  width: 400px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin: auto;
+  box-sizing: border-box;
+  border-radius: 15px;
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+input{
+  padding: 10px;
+  margin: 10px 0;
+  border: 0 solid rgb(95, 94, 94);
+  outline: none;
+  font-size: 25px;
+  color: rgb(39, 36, 36);
+  width: 80%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.textarea{
+	width: 75%;
+	height: 100px;
+	border: none;
+	padding: 8px;
+	font-family: Tahoma, sans-serif;
+	background-position: bottom right;
+  background-repeat: no-repeat;
+  resize: none;
+  overflow: auto;
+  outline: none;
+  font-size: 17px;
+  margin-right: 25px;
+   
+}
+.plus_btn{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-direction: row;
+  justify-content: end;
+  align-items: flex-end;
 }
-
-.App-link {
-  color: #61dafb;
+.added_note{
+  width: 300px;
+  height: 200px;
+  display: inline-block;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  box-sizing: border-box;
+  position: absolute;
+  border-radius: 15px;
+  box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.5);
+  
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.heading_add{
+  font-size: 25px;
+}
+.paragraph{
+  width: 80%;
+  height: 25%;
+}
+.delete_icon{
+  left: 225px;
+}
+.main_div{
+  width: 100%;
+  height: fit-content;
+  display: inline-block;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-top: 250px;
+  margin-left: 20px;
+  margin-right: 20px;
 }
